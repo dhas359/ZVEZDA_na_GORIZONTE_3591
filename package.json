@@ -1,4 +1,23 @@
 {
+  "name": "ZVEZDA_na_GORIZONTE_3591",
+  "version": "1.0.0",
+  "description": "Проект ZVEZDA на горизонте 3591",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhas359/ZVEZDA"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhas359/ZVEZDA/issues"
+  },
+  "homepage": "https://github.com/dhas359/ZVEZDA#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^7.1.2",
@@ -6,7 +25,6 @@
     "html-webpack-plugin": "^5.6.3",
     "style-loader": "^4.0.0",
     "webpack": "^5.97.1",
-    "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.0"
+    "webpack-cli": "^5.1.4"
   }
 }
