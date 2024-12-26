@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZVEZDA na GORIZONTE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      transition: background-color 0.5s ease;
+    }
+
+    .btn-container {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 1000;
+    }
+
+    .btn-new {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      color: white;
+      background-color: #007bff;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-new:hover {
+      background-color: #0056b3;
+      -webkit-animation: rubberBand 0.6s ease;
+      animation: rubberBand 0.6s ease;
+    }
+
+    @keyframes rubberBand {
+      0% { transform: scale(1); }
+      30% { transform: scaleX(1.05) scaleY(0.85); }
+      40% { transform: scaleX(0.85) scaleY(1.10); }
+      60% { transform: scaleX(1.05) scaleY(0.95); }
+      100% { transform: scale(1); }
+    }
+
+    /* Цвета фонов */
+    .light-mode {
+      background-color: #fdfd96; /* Светлый фон */
+    }
+
+    .dark-mode {
+      background-color: #2f2f2f; /* Темный фон */
+    }
+  </style>
+</head>
+<body>
+  <div class="btn-container">
+    <button class="btn-new" onclick="changeToLightMode()">Светлая</button>
+    <button class="btn-new" onclick="changeToDarkMode()">Темная</button>
+  </div>
+
+  <script>
+    // Функции для изменения фона
+    function changeToLightMode() {
+      document.body.classList.add("light-mode");
+      document.body.classList.remove("dark-mode");
+    }
+
+    function changeToDarkMode() {
+      document.body.classList.add("dark-mode");
+      document.body.classList.remove("light-mode");
+    }
+  </script>
+</body>
+</html>
